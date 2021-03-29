@@ -8,6 +8,7 @@ import {
 import { useInterval } from '../hooks/useInterval';
 import { DefaultLayout } from '../components/Layout/DefaultLayout';
 import { Typography } from '../components/Typography/Typography';
+import Form from '../components/Form/Form';
 
 export const Home = () => {
   const dispatch = useAppDispatch();
@@ -31,11 +32,13 @@ export const Home = () => {
       <Typography.Body>
         Edit <code>pages/App.tsx</code> and save to test HMR updates.
       </Typography.Body>
-
       <WelcomeImage
         alt=""
         src="https://media.giphy.com/media/YcFOfbeTcHtVS/giphy.gif"
       />
+
+      <Form />
+
 
       <Typography.Body>
         Project bootstraped with{' '}
